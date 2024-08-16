@@ -188,17 +188,6 @@ a{
     background-color:var(--color-heading);
     color: white;
 }
-.btn__search{
-    fill: white;
-    height: 2.5rem;
-    width: 2.5rem;
-    margin-right: 1rem;
-}
-.btn--inline{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
 .btn--block{
     width:100% ;
     display: inline-block;
@@ -221,9 +210,28 @@ a{
 ::placeholder{
 color: #cdcbd7;
 }
+.input-group{
+    border: 1px solid #ccc;
+    border-radius: 4rem;
+    display: flex;
+    margin-top: 1rem;
+}
+.input-group .input{
+    border: 0;
+    flex-grow: 1;
+}
+.input-group .btn{
+    margin: 3px;
+}
+.input-group .icon{
+    fill: white;
+    height:2.5rem ;
+    margin-right: 1rem;
+    vertical-align: middle;
+    width:2.5rem ;
+}
 @media screen and (min-width:1024px) {
     .input{
         font-size: 1.5rem;
     }
-    
 }
