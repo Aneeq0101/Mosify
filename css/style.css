@@ -1,4 +1,4 @@
-/* Base rules */
+    /* Base rules */
 :root{
     --color-body:#918ca4;
     --color-heading:#1b0760;
@@ -48,7 +48,7 @@ p{
     }
 
 }
-/*Links*/
+        /*Links*/
 a{
     text-decoration: none;
 }
@@ -72,7 +72,7 @@ a{
  }    
 }
 
-/*Badges*/
+    /*Badges*/
 .badge{
     border-radius: 20px;
     font-size: 2rem;
@@ -97,7 +97,31 @@ a{
     }
 .badge--small{
     font-size: 1.2rem;
+} 
 }
-    
-    
+        /*List*/
+.list{
+    list-style-type: none;
+    padding: 0;
+    color: var(--color-heading);
+
+}
+.list--inline .list__item{
+    display: inline-block;
+    margin-right: 2rem;
+}
+.list--tick{
+    list-style-image: url(../images/tick.svg);
+    padding-left: 3rem;
+
+}
+.list--tick .list__item{
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+
+}
+@media screen and (min-width:1024px) {
+.list--tick .list__item{
+    padding-left: 0;
+}    
 }
