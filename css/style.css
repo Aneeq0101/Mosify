@@ -2,12 +2,14 @@
 :root{
     --color-body:#918ca4;
     --color-heading:#1b0760;
-    --color-primary:#2584ff;
+    --color-primary:#4193ff;
     --color-secondary:#00d9ff;
-    --color-accent:#ff3400;
-
-    /* Typography*/
+    --color-accent:#ff3400;    
 }
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+/* Typography*/
 html{
     font-size: 62.5%;
 }
@@ -101,9 +103,9 @@ a{
 }
         /*List*/
 .list{
+    color: var(--color-heading);
     list-style-type: none;
     padding: 0;
-    color: var(--color-heading);
 
 }
 .list--inline .list__item{
@@ -129,19 +131,81 @@ a{
 /*Icons*/
 .icon{
     height: 40px;
-    weight: 40px;
+    width: 40px;
 }
 .icon--primary{
     fill: var(--color-primary);
 }
 .icon-container{
-    height: 64px;
-    width: 64px;
-    border-radius: 100%;
+    align-items: center;
     background-color:#f3f9FA;
+    border-radius: 100%;
+    display: inline-flex;
+    height: 64px;
+    justify-content: center;
+    width: 64px;
+}
+
+/*Buttons*/
+.btn{
+    border-radius: 5rem;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space:nowrap;
+}
+.btn--primary{
+    background-color: var(--color-primary);
+    color: white;
+}
+.btn--primary:hover{
+    background-color:#58a0ff; ;
+}
+.btn--secondary{
+    background-color: var(--color-secondary);
+    color: white;
+}
+.btn--secondary:hover{
+    background-color:#5fe0f7;
+}
+.btn--accent{
+    background-color: var(--color-accent);
+    color: white;
+}
+.btn--accent:hover{
+    background-color:#ff5e36;
+}
+.btn--outline{
+    background-color: white;
+    color: var(--color-heading);
+    border: 2px solid var(--color-heading);
+}
+.btn--outline:hover{
+    background-color:var(--color-heading);
+    color: white;
+}
+.btn__search{
+    fill: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+.btn--inline{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
-
+}
+.btn--block{
+    width:100% ;
+    display: inline-block;
+}
+@media screen and (min-width:1024px) {
+    .btn{
+        font-size: 1.5rem;
+    }
+    
 }
