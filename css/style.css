@@ -141,9 +141,9 @@ a{
     background-color:#f3f9FA;
     border-radius: 100%;
     display: inline-flex;
-    height: 64px;
+    height: 75px;
     justify-content: center;
-    width: 64px;
+    width: 75px;
 }
 
 /*Buttons*/
@@ -308,4 +308,14 @@ color: #cdcbd7;
         margin-top:4rem;
     }   
     
+}
+/*Media object*/
+.media{
+    margin: 2rem;
+}
+.media__image{
+  margin: 0;
+}
+.media__title{
+    margin-top: 0rem;
 }
