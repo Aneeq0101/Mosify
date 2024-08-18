@@ -430,8 +430,7 @@ color: #cdcbd7;
     .callout .grid--col-2{
         grid-template-columns:1fr auto;
     }
-    .callout__btn-container{
-        display: flex;
-        align-items: center;
+    .callout .btn{ 
+        align-self: center;
     }
 }
