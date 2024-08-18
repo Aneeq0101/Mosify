@@ -160,6 +160,7 @@ a{
     text-align: center;
     text-transform: uppercase;
     white-space:nowrap;
+    display: inline-block;
 }
 .btn--primary{
     background-color: var(--color-primary);
@@ -190,6 +191,9 @@ a{
 .btn--outline:hover{
     background-color:var(--color-heading);
     color: white;
+}
+.btn--streched{
+    padding: 1.7rem 6rem;
 }
 .btn--block{
     width:95% ;
@@ -363,30 +367,14 @@ color: #cdcbd7;
 .grid{
     display: grid;
 }
-.div1, .div2,div3{
-    height: 100px;
-}
-.div1{
-    background: orange;
-}
-.div2{
-    background: dodgerblue;
-}
-.div3{
-    background: tomato;
-}
+
 @media screen and (min-width:768px) {
     .grid--col-2{
         grid-template-columns: 1fr 1fr;
     }
     
 }
-@media screen and (min-width:1024px) {
-    .grid--col-3{
-        grid-template-columns:repeat(3, 1fr);
-    }
-    
-}
+
 /*Testimonial*/
 .testimonial__image-container{
     position: relative;
@@ -413,5 +401,37 @@ color: #cdcbd7;
     }
     .testimonial .quote__company{
         font-size: 1.6rem;
+    }
+}
+
+/*Callouts*/
+.callout{
+    padding: 4rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.callout--primary{
+    background: var(--color-primary);
+    color: white;
+}
+.callout__heading{
+    color: white;
+    margin-top: 0;
+}
+.callout--content>p{
+    margin-left: 1rem;
+}
+
+@media screen and (min-width:768px) {
+    .callout{
+        text-align: left;
+    }
+    .callout .grid--col-2{
+        grid-template-columns:1fr auto;
+    }
+    .callout__btn-container{
+        display: flex;
+        align-items: center;
     }
 }
