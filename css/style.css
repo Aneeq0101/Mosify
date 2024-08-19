@@ -445,18 +445,22 @@ color: #cdcbd7;
 }
 .collapsible__chevron{
     transform: rotate(-90deg);
+    transition: transform 0.5s;
 }
 .collapsible__content{
     max-height: 0;
     opacity: 0;
     overflow: hidden;
+    transition: all 0.5s;
 }
 .collapsible--expanded .collapsible__chevron{
     transform: rotate(0);
+    transition: transform 0.5s;
 }
 .collapsible--expanded .collapsible__content{
     max-height: 100vh;
     opacity: 1;
+    transition: all 0.5s;
   
 }
 /* Blocks */
@@ -496,4 +500,48 @@ color: #cdcbd7;
     max-width: 1140px;
     margin: 0 auto;
   }
-  
+  /*Nav*/
+  .nav{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 0.5rem;
+  }
+.nav__toggler{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.nav.collapsible--expanded .nav__toggler{
+    opacity: 1;
+}
+.nav__list{
+    color: white ;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    margin: 0;
+}
+.nav .list__item{
+    border-bottom:1px solid #310505;
+}
+ @media screen and (min-width:768px) {
+   .nav{
+    flex-wrap: nowrap;
+   }
+    .nav__list{
+        display: flex;
+        width: auto;
+        max-height: 100vh;
+        opacity: 1;
+    }
+    
+    .nav__list .list__item{
+        padding-right: 1rem;
+        font-size: small;
+    }
+        
+    .nav__toggler{
+        display: none;
+    }
+  }
