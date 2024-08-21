@@ -14,72 +14,67 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="block block--dark block--skewed-right showcase-block">
-      <header class="block__header">
-        <h2 class="block__heading">User-Friendly Control Panel</h2>
-      </header>
-      <div class="container grid grid--col-2">
-        <picture class="showcase__image">
-          <source
-            type="image/webp"
-            srcset="
-              images\optimized\ipad.webp    1x,
-              images\optimized\ipad@2x.webp 2x
-            " />
-          <source
-            type="image/jpg"
-            srcset="
-              images\optimized\ipad/jpg    1x,
-              images\optimized\ipad@2x.jpg 2x
-            " />
-          <img
-            src="images\optimized\ipad@2x.jpg"
-            alt="An ipad with Moshify user friendly interface."
-        /></picture>
-        <div class="media__components-container">
-          <div class="media">
-            <figure class="media__image">
-              <svg class="icon icon--primary">
-                <use xlink:href="images/sprite.svg#snap"></use>
-              </svg>
-            </figure>
-            <section class="media__body">
-              <h3 class="media__title">Easy Start & Managed Updates</h3>
-              <p>
-                Our cloud plans include easy onboarding for new and existing
-                sites and managed WordPress and WooCommerce auto-updates.
-              </p>
-            </section>
-          </div>
-          <div class="media">
-            <figure class="media__image">
-              <svg class="icon icon--primary">
-                <use xlink:href="images/sprite.svg#growth"></use>
-              </svg>
-            </figure>
-            <section class="media__body">
-              <h3 class="media__title">Staging, Git & WP-CLI</h3>
-              <p>
-                We make your WordPress and WooCommerce development flow easier
-                with a convenient staging tool and Git and WP-CLI integration.
-              </p>
-            </section>
-          </div>
-          <div class="media">
-            <figure class="media__image">
-              <svg class="icon icon--primary">
-                <use xlink:href="images/sprite.svg#wordpress"></use>
-              </svg>
-            </figure>
-            <section class="media__body">
-              <h3 class="media__title">Dynamic Caching & More</h3>
-              <p>
-                Speed up your WordPress and Woo sites with our SG Optimizer
-                plugin through smart dynamic caching and multiple other
-                performance optimizations.
-              </p>
-            </section>
-          </div>
+    <section class="block container plan--block">
+      <div class="grid grid--col-3">
+        <div class="card-container">
+          <article class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Sotrage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">buy now</button>
+            </div>
+          </article>
+        </div>
+        <div class="card-container">
+          <article class="card card--primary plan--popular">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--primary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Sotrage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">buy now</button>
+            </div>
+          </article>
+        </div>
+        <div class="card-container">
+          <article class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Sotrage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">buy now</button>
+            </div>
+          </article>
         </div>
       </div>
     </section>
